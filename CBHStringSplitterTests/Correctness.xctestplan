@@ -1,0 +1,68 @@
+{
+  "configurations" : [
+    {
+      "id" : "6BA02D15-2151-4077-89E5-F902CCBAE711",
+      "name" : "Behaviour",
+      "options" : {
+        "addressSanitizer" : {
+          "detectStackUseAfterReturn" : true,
+          "enabled" : true
+        },
+        "guardMallocEnabled" : false,
+        "mainThreadCheckerEnabled" : true,
+        "mallocGuardEdgesEnabled" : false,
+        "mallocScribbleEnabled" : true,
+        "mallocStackLoggingOptions" : null,
+        "nsZombieEnabled" : true,
+        "testExecutionOrdering" : "random",
+        "threadSanitizerEnabled" : false,
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    },
+    {
+      "id" : "E2160853-026E-43B4-938E-590361A07FAF",
+      "name" : "Threading",
+      "options" : {
+        "mainThreadCheckerEnabled" : true,
+        "mallocScribbleEnabled" : false,
+        "testExecutionOrdering" : "random",
+        "threadSanitizerEnabled" : true,
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    },
+    {
+      "id" : "DF653AB4-6B9D-4135-A7E5-E4AE45F53D97",
+      "name" : "Memory",
+      "options" : {
+        "guardMallocEnabled" : true,
+        "mainThreadCheckerEnabled" : true,
+        "mallocGuardEdgesEnabled" : true,
+        "mallocStackLoggingOptions" : {
+          "loggingType" : "allAllocations"
+        },
+        "testExecutionOrdering" : "random",
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "CBHStringSplitterTests\/testPerformance_all",
+        "CBHStringSplitterTests\/testPerformance_fast",
+        "CBHStringSplitterTests\/testPerformance_next",
+        "CBHStringSplitterTests\/testPerformance_normal"
+      ],
+      "target" : {
+        "containerPath" : "container:CBHStringSplitter.xcodeproj",
+        "identifier" : "83888689236E0CE100697705",
+        "name" : "CBHStringSplitterTests"
+      }
+    }
+  ],
+  "version" : 1
+}

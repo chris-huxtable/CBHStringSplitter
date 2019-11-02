@@ -1,0 +1,43 @@
+{
+  "configurations" : [
+    {
+      "id" : "51D57529-B4CA-4C95-B1DD-D0B5DE396D8C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "CBHStringSplitterTests\/testBasic_all",
+        "CBHStringSplitterTests\/testBasic_fast",
+        "CBHStringSplitterTests\/testBasic_next",
+        "CBHStringSplitterTests\/testCorrectness_missingTrailingNewline",
+        "CBHStringSplitterTests\/testCorrectness_withTrailingNewline",
+        "CBHStringSplitterTests\/testEdge_emptyString",
+        "CBHStringSplitterTests\/testEdge_enumerationInterruptionLarge",
+        "CBHStringSplitterTests\/testEdge_enumerationInterruptionSmall",
+        "CBHStringSplitterTests\/testEdge_nextAtEnd",
+        "CBHStringSplitterTests\/testEncoding_utf16",
+        "CBHStringSplitterTests\/testEncoding_utf32",
+        "CBHStringSplitterTests\/testEncoding_utf8",
+        "CBHStringSplitterTests\/testInitialization_data",
+        "CBHStringSplitterTests\/testInitialization_path",
+        "CBHStringSplitterTests\/testInitialization_stream",
+        "CBHStringSplitterTests\/testInitialization_string",
+        "CBHStringSplitterTests\/testInitialization_url"
+      ],
+      "target" : {
+        "containerPath" : "container:CBHStringSplitter.xcodeproj",
+        "identifier" : "83888689236E0CE100697705",
+        "name" : "CBHStringSplitterTests"
+      }
+    }
+  ],
+  "version" : 1
+}
